@@ -7,3 +7,10 @@ sudo apt-get install openjdk-7-jdk
 wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz
 tar -xvzf android-sdk_r24.4.1-linux.tgz 
 sudo mv android-sdk-linux /usr/local/
+
+npm init
+
+npm install babel-cli babel-core babel-preset-es2015 babel-preset-react --save-dev
+echo '{\n  "presets": ["es2015", "react"]\n}' > .babelrc
+
+npm install webpack babel-loader file-loader webpack-dev-server --save-dev
