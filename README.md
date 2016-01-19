@@ -10,7 +10,7 @@ sudo mv android-sdk-linux /usr/local/
 
 npm init
 
-npm install babel-cli babel-core babel-preset-es2015 babel-preset-react --save-dev
-echo '{\n  "presets": ["es2015", "react"]\n}' > .babelrc
+npm install babel-cli babel-core babel-preset-es2015 babel-preset-react  babel-preset-stage-0 --save-dev
+echo '{\n  "presets": ["es2015", "stage-0","react"]\n}' > .babelrc
 
 npm install webpack babel-loader file-loader webpack-dev-server --save-dev
